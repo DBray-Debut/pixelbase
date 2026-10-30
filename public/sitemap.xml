@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://pixelbase.pages.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/" />
+  </url>
+  <url>
+    <loc>https://pixelbase.pages.dev/es/base64.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64.html" />
+  </url>
+  <url>
+    <loc>https://pixelbase.pages.dev/en/base64.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64.html" />
+  </url>
+</urlset>

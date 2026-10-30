@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixelbase — Herramientas de imagen 100% en tu navegador</title>
+  <meta name="description" content="Convierte imágenes a Base64, comprime, redimensiona y cambia de formato online. Gratis, sin registro y sin subir archivos a ningún servidor." />
+  <link rel="canonical" href="https://pixelbase.pages.dev/" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">P</span> pixelbase
+      </a>
+      <nav class="lang-switch">
+        <a href="index.html" class="active">ES</a>
+        <a href="en/base64.html">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Herramientas de imagen 100% en tu navegador</h1>
+    <p class="lead">
+      Convierte, comprime y transforma imágenes sin subirlas a ningún servidor.
+      Gratis, sin registro y sin límites.
+    </p>
+
+    <div class="tools-grid">
+      <a class="tool-card" href="es/base64.html">
+        <span class="icon">🔤</span>
+        <h3>Imagen a Base64</h3>
+        <p>Convierte imágenes a Base64 para usar en HTML, CSS o código.</p>
+      </a>
+    </div>
+
+    <h2>¿Por qué Pixelbase?</h2>
+    <p class="muted">
+      Todas las herramientas funcionan directamente en tu navegador.
+      Tus imágenes nunca salen de tu dispositivo, lo que garantiza privacidad total
+      y velocidad inmediata.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Pixelbase
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

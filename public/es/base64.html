@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convertir imagen a Base64 online — Pixelbase</title>
+  <meta name="description" content="Convierte imágenes a Base64 online, gratis y sin subir archivos a ningún servidor. Todo se procesa en tu navegador. Soporta PNG, JPG, WebP, GIF y más." />
+  <link rel="canonical" href="https://pixelbase.pages.dev/es/base64" />
+  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64" />
+  <link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark">P</span> pixelbase
+      </a>
+      <nav class="lang-switch">
+        <a href="base64.html" class="active">ES</a>
+        <a href="../en/base64.html">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Convertir imagen a Base64 online</h1>
+    <p class="lead">
+      Sube una o varias imágenes y obtén su código Base64 listo para usar en HTML, CSS o tu código.
+      Todo se procesa en tu navegador: <strong>ninguna imagen se sube a ningún servidor</strong>.
+    </p>
+
+    <section class="panel">
+      <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Seleccionar o soltar imágenes">
+        <strong>Suelta tus imágenes aquí</strong>
+        <span class="hint">o haz clic para seleccionar varios archivos</span>
+        <input type="file" id="fileInput" accept="image/*" multiple />
+      </div>
+
+      <div class="controls-row" style="margin-top:18px;">
+        <label for="mode">Formato de salida:</label>
+        <select id="mode">
+          <option value="data">Data URI completo</option>
+          <option value="base64">Base64 puro</option>
+          <option value="img">Etiqueta &lt;img&gt;</option>
+          <option value="css">Fondo CSS</option>
+        </select>
+
+        <label style="display:flex;align-items:center;gap:6px;margin-left:auto;">
+          <input type="checkbox" id="wrap" checked />
+          Incluir formato listo para usar
+        </label>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:24px 0 12px;">
+      <h2 style="margin:0;">Imágenes cargadas</h2>
+      <button id="clearAll" class="btn btn-ghost" type="button">Limpiar todo</button>
+    </div>
+
+    <section id="results" class="results"></section>
+
+    <h2>¿Cómo usar el Base64?</h2>
+    <p class="muted">
+      El Base64 permite incrustar imágenes directamente en HTML o CSS sin archivos externos.
+      Útil para iconos, logos pequeños o recursos que quieras incluir en un solo archivo.
+      Ten en cuenta que Base64 aumenta el tamaño de los datos aproximadamente un 33%.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Pixelbase · Herramientas de imagen 100% en tu navegador.
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/base64.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

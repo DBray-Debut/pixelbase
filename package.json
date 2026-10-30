@@ -1,0 +1,13 @@
+{
+  "name": "pixelbase",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Image toolbox 100% en navegador: Base64, compresión, redimensionado y conversión de formato.",
+  "scripts": {
+    "dev": "npx serve public -l 3000",
+    "build": "echo 'static build ok'"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
