@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Convertir imagen a Base64 online — Pixelbase</title>
-  <meta name="description" content="Convierte imágenes a Base64 online, gratis y sin subir archivos a ningún servidor. Todo se procesa en tu navegador. Soporta PNG, JPG, WebP, GIF y más." />
-  <link rel="canonical" href="https://pixelbase.pages.dev/es/base64" />
-  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64" />
-  <link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64" />
+  <title>Convertir imagen a Base64 online gratis — Sin subir archivos | Pixelbase</title>
+  <meta name="description" content="Convierte imágenes a Base64 online gratis. Pega o arrastra tu foto y obtén el código Base64 listo para HTML o CSS. Sin registro y sin subir archivos a ningún servidor." />
+  <link rel="canonical" href="https://pixelbase.pages.dev/es/base64.html" />
+  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64.html" />
+  <link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64.html" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
@@ -24,7 +24,13 @@
   </header>
 
   <main>
-    <h1>Convertir imagen a Base64 online</h1>
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="../index.html">Inicio</a>
+      <span>›</span>
+      <span>Convertir imagen a Base64</span>
+    </nav>
+
+    <h1>Convertir imagen a Base64 online gratis</h1>
     <p class="lead">
       Sube una o varias imágenes y obtén su código Base64 listo para usar en HTML, CSS o tu código.
       Todo se procesa en tu navegador: <strong>ninguna imagen se sube a ningún servidor</strong>.
@@ -62,16 +68,64 @@
 
     <section id="results" class="results"></section>
 
-    <h2>¿Cómo usar el Base64?</h2>
-    <p class="muted">
-      El Base64 permite incrustar imágenes directamente en HTML o CSS sin archivos externos.
-      Útil para iconos, logos pequeños o recursos que quieras incluir en un solo archivo.
-      Ten en cuenta que Base64 aumenta el tamaño de los datos aproximadamente un 33%.
-    </p>
+    <section class="faq">
+      <h2>Preguntas frecuentes sobre Base64</h2>
+
+      <details>
+        <summary>¿Qué es el Base64 y para qué sirve?</summary>
+        <p>
+          Base64 es un sistema de codificación que convierte datos binarios (como una imagen)
+          en una cadena de texto. Se usa para incrustar imágenes directamente en HTML o CSS
+          sin necesidad de archivos externos, lo que resulta útil para iconos, logos pequeños
+          o recursos que quieres incluir en un solo archivo.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Base64 aumenta el tamaño del archivo?</summary>
+        <p>
+          Sí. Al convertir una imagen a Base64, el tamaño de los datos aumenta aproximadamente
+          un 33%. Por eso se recomienda usar Base64 solo para imágenes pequeñas (iconos, logos)
+          y no para fotos grandes.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Es seguro convertir imágenes aquí?</summary>
+        <p>
+          Completamente. Esta herramienta funciona 100% en tu navegador: la imagen nunca se
+          sube a ningún servidor, así que nadie más puede verla. Puedes usarla incluso sin conexión
+          una vez cargada la página.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Qué formatos de imagen puedo convertir a Base64?</summary>
+        <p>
+          Puedes convertir PNG, JPG, JPEG, GIF, WebP, BMP, SVG y la mayoría de formatos de imagen
+          que tu navegador pueda abrir. El resultado será el código Base64 correspondiente al
+          formato original de la imagen.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Cuántas imágenes puedo convertir a la vez?</summary>
+        <p>
+          No hay límite. Puedes arrastrar varias imágenes a la vez y obtendrás el código Base64
+          de cada una por separado, con botones para copiar o descargar cada resultado
+          individualmente.
+        </p>
+      </details>
+    </section>
   </main>
 
   <footer class="site-footer">
-    © <span id="year"></span> Pixelbase · Herramientas de imagen 100% en tu navegador.
+    <p>© <span id="year"></span> Pixelbase · Herramientas de imagen online gratis</p>
+    <p style="margin-top:8px;">
+      <a href="../index.html">Inicio</a> ·
+      <a href="base64.html">Convertir imagen a Base64</a> ·
+      <a href="../en/base64.html">Image to Base64</a>
+    </p>
   </footer>
 
   <script src="../js/common.js"></script>
