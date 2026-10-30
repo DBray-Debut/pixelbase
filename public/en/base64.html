@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Convert image to Base64 online — Pixelbase</title>
   <meta name="description" content="Convert images to Base64 online, free and without uploading files to any server. Everything runs in your browser. Supports PNG, JPG, WebP, GIF and more." />
-  <link rel="canonical" href="https://pixelbase.pages.dev/en/base64" />
-  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64" />
-  <link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23f4b740'/%3E%3Ctext x='50' y='72' font-family='Arial,Helvetica,sans-serif' font-size='60' font-weight='bold' fill='%231a1200' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="canonical" href="https://pixelbase.pages.dev/en/base64.html" />
+  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64.html" />
+  <link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64.html" />
+  <link rel="alternate" hreflang="x-default" href="https://pixelbase.pages.dev/" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
@@ -24,6 +26,12 @@
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <span>Image to Base64</span>
+    </nav>
+
     <h1>Convert image to Base64 online</h1>
     <p class="lead">
       Upload one or several images and get their Base64 code ready to use in HTML, CSS or your code.
@@ -62,16 +70,60 @@
 
     <section id="results" class="results"></section>
 
-    <h2>How to use Base64</h2>
-    <p class="muted">
-      Base64 lets you embed images directly into HTML or CSS without external files.
-      Useful for icons, small logos or assets you want to bundle in a single file.
-      Keep in mind Base64 increases data size by roughly 33%.
-    </p>
+    <section class="faq">
+      <h2>Frequently asked questions about Base64</h2>
+
+      <details>
+        <summary>What is Base64 and what is it used for?</summary>
+        <p>
+          Base64 is an encoding system that converts binary data (like an image) into a text string.
+          It's used to embed images directly into HTML or CSS without external files, which is useful
+          for icons, small logos or assets you want to bundle in a single file.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does Base64 increase file size?</summary>
+        <p>
+          Yes. Converting an image to Base64 increases data size by roughly 33%. That's why it's
+          recommended only for small images (icons, logos), not for large photos.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is it safe to convert images here?</summary>
+        <p>
+          Completely. This tool runs 100% in your browser: the image is never uploaded to any server,
+          so no one else can see it. You can even use it offline once the page is loaded.
+        </p>
+      </details>
+
+      <details>
+        <summary>What image formats can I convert to Base64?</summary>
+        <p>
+          You can convert PNG, JPG, JPEG, GIF, WebP, BMP, SVG and most image formats your browser
+          can open. The result will be the Base64 code corresponding to the original image format.
+        </p>
+      </details>
+
+      <details>
+        <summary>How many images can I convert at once?</summary>
+        <p>
+          No limit. You can drag multiple images at once and get each one's Base64 code separately,
+          with buttons to copy or download each result individually.
+        </p>
+      </details>
+    </section>
   </main>
 
   <footer class="site-footer">
-    © <span id="year"></span> Pixelbase · Image tools 100% in your browser.
+    <p>© <span id="year"></span> Pixelbase · Free image tools 100% in your browser</p>
+    <p style="margin-top:8px;">
+      <a href="../index.html">Home</a> ·
+      <a href="base64.html">Image to Base64</a> ·
+      <a href="../es/base64-a-imagen.html">Base64 to image (ES)</a> ·
+      <a href="../es/texto-a-base64.html">Text to Base64 (ES)</a>
+    </p>
   </footer>
 
   <script src="../js/common.js"></script>

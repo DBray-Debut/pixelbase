@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codificar y decodificar texto a Base64 online gratis | Pixelbase</title>
+  <meta name="description" content="Codifica o decodifica texto plano a Base64 online, al instante y sin registro. Soporta UTF-8, copia el resultado con un clic. 100% en tu navegador, gratis." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23f4b740'/%3E%3Ctext x='50' y='72' font-family='Arial,Helvetica,sans-serif' font-size='60' font-weight='bold' fill='%231a1200' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="canonical" href="https://pixelbase.pages.dev/es/texto-a-base64.html" />
+  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/texto-a-base64.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark">P</span> pixelbase
+      </a>
+      <nav class="lang-switch">
+        <a href="texto-a-base64.html" class="active">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="../index.html">Inicio</a>
+      <span>›</span>
+      <span>Texto a Base64</span>
+    </nav>
+
+    <h1>Codificar y decodificar texto a Base64</h1>
+    <p class="lead">
+      Convierte texto plano a Base64 o decodifica un Base64 a texto legible al instante.
+      Soporta caracteres UTF-8 (tildes, ñ, emojis). Todo en tu navegador, sin subir nada.
+    </p>
+
+    <section class="panel">
+      <div class="controls-row">
+        <button id="tabEncode" class="btn btn-primary" type="button">Texto → Base64</button>
+        <button id="tabDecode" class="btn btn-secondary" type="button">Base64 → Texto</button>
+      </div>
+
+      <label for="inputText" style="display:block;font-size:13px;color:var(--text-2);font-weight:500;margin:14px 0 8px;">
+        <span id="inputLabel">Texto a codificar:</span>
+      </label>
+      <textarea id="inputText" placeholder="Escribe o pega tu texto aquí..."></textarea>
+
+      <div class="controls-row" style="margin-top:14px;">
+        <button id="convertBtn" class="btn btn-primary" type="button">Convertir</button>
+        <button id="clearBtn" class="btn btn-ghost" type="button">Limpiar</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="outputPanel" class="panel" style="display:none;">
+      <label style="display:block;font-size:13px;color:var(--text-2);font-weight:500;margin-bottom:8px;">
+        <span id="outputLabel">Resultado:</span>
+      </label>
+      <textarea id="outputText" readonly></textarea>
+      <div class="controls-row" style="margin-top:14px;">
+        <button id="copyBtn" class="btn btn-primary" type="button">Copiar resultado</button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Qué diferencia hay entre codificar y decodificar?</summary>
+        <p>
+          Codificar convierte texto legible en una cadena Base64 (por ejemplo, <code>Hola</code> → <code>SG9sYQ==</code>).
+          Decodificar hace lo inverso: toma una cadena Base64 y la convierte de vuelta a texto legible.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Soporta tildes, ñ y emojis?</summary>
+        <p>
+          Sí. Esta herramienta usa codificación UTF-8, así que puedes convertir texto con cualquier
+          carácter especial: tildes, ñ, ç, emojis y prácticamente cualquier símbolo Unicode.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Es seguro usar esta herramienta con datos sensibles?</summary>
+        <p>
+          Sí. Todo el proceso ocurre en tu navegador. El texto que pegas nunca se envía a ningún
+          servidor, por lo que puedes usarla con contraseñas, tokens o datos privados sin riesgo.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Pixelbase · Herramientas de imagen online gratis</p>
+    <p style="margin-top:8px;">
+      <a href="../index.html">Inicio</a> ·
+      <a href="base64.html">Imagen a Base64</a> ·
+      <a href="base64-a-imagen.html">Base64 a imagen</a> ·
+      <a href="texto-a-base64.html">Texto a Base64</a>
+    </p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/texto-a-base64.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

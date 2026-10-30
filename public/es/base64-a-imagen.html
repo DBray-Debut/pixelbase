@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convertir Base64 a imagen online gratis — Visor y descarga | Pixelbase</title>
+  <meta name="description" content="Pega un código Base64 y conviértelo a imagen online gratis. Visualiza la imagen al instante y descárgala en PNG, JPG o WebP. Sin registro y 100% en tu navegador." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23f4b740'/%3E%3Ctext x='50' y='72' font-family='Arial,Helvetica,sans-serif' font-size='60' font-weight='bold' fill='%231a1200' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="canonical" href="https://pixelbase.pages.dev/es/base64-a-imagen.html" />
+  <link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64-a-imagen.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark">P</span> pixelbase
+      </a>
+      <nav class="lang-switch">
+        <a href="base64-a-imagen.html" class="active">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="../index.html">Inicio</a>
+      <span>›</span>
+      <span>Base64 a imagen</span>
+    </nav>
+
+    <h1>Convertir Base64 a imagen online gratis</h1>
+    <p class="lead">
+      Pega un código Base64 (con o sin prefijo <code>data:image/...</code>) y visualiza la imagen
+      al instante. Puedes descargarla en PNG, JPG o WebP. Todo en tu navegador,
+      <strong>sin subir nada a ningún servidor</strong>.
+    </p>
+
+    <section class="panel">
+      <label for="base64Input" style="display:block;font-size:13px;color:var(--text-2);font-weight:500;margin-bottom:8px;">
+        Pega el código Base64 aquí:
+      </label>
+      <textarea id="base64Input" placeholder="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQ...&#10;&#10;o también:&#10;/9j/4AAQSkZJRgABAQ..."></textarea>
+
+      <div class="controls-row" style="margin-top:14px;">
+        <button id="showBtn" class="btn btn-primary" type="button">Mostrar imagen</button>
+        <button id="clearBtn" class="btn btn-ghost" type="button">Limpiar</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="previewPanel" class="panel" style="display:none;">
+      <div style="text-align:center;margin-bottom:16px;">
+        <img id="previewImg" alt="Vista previa de la imagen Base64" style="max-width:100%;max-height:420px;border-radius:10px;border:1px solid var(--border);" />
+      </div>
+      <p class="muted" id="previewMeta" style="text-align:center;"></p>
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
+        <button id="downloadPng" class="btn btn-primary" type="button">Descargar PNG</button>
+        <button id="downloadJpg" class="btn btn-secondary" type="button">Descargar JPG</button>
+        <button id="downloadWebp" class="btn btn-secondary" type="button">Descargar WebP</button>
+        <button id="copyBase64" class="btn btn-ghost" type="button">Copiar Base64</button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Qué formato de Base64 acepta esta herramienta?</summary>
+        <p>
+          Acepta tanto un Data URI completo (por ejemplo <code>data:image/png;base64,iVBORw0KGgo...</code>)
+          como el código Base64 puro sin prefijo. Si pegas solo el Base64, se asume JPEG por defecto.
+          La imagen puede estar en PNG, JPG, GIF, WebP o cualquier formato que tu navegador soporte.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Cómo descargo la imagen resultante?</summary>
+        <p>
+          Una vez visualizada la imagen, puedes descargarla en PNG, JPG o WebP usando los botones
+          inferiores. El formato PNG conserva la transparencia; el JPG y el WebP son más ligeros
+          pero no soportan transparencia.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Se sube mi Base64 a algún servidor?</summary>
+        <p>
+          No. Todo el proceso de decodificación y conversión ocurre en tu navegador. El código
+          Base64 que pegas nunca sale de tu dispositivo, por lo que puedes usarlo incluso con
+          información sensible.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Pixelbase · Herramientas de imagen online gratis</p>
+    <p style="margin-top:8px;">
+      <a href="../index.html">Inicio</a> ·
+      <a href="base64.html">Imagen a Base64</a> ·
+      <a href="base64-a-imagen.html">Base64 a imagen</a> ·
+      <a href="texto-a-base64.html">Texto a Base64</a>
+    </p>
+  </footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/base64-a-imagen.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

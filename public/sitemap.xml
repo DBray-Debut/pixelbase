@@ -4,6 +4,7 @@
   <url>
     <loc>https://pixelbase.pages.dev/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelbase.pages.dev/" />
   </url>
   <url>
     <loc>https://pixelbase.pages.dev/es/base64.html</loc>
@@ -14,5 +15,11 @@
     <loc>https://pixelbase.pages.dev/en/base64.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://pixelbase.pages.dev/es/base64.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pixelbase.pages.dev/en/base64.html" />
+  </url>
+  <url>
+    <loc>https://pixelbase.pages.dev/es/base64-a-imagen.html</loc>
+  </url>
+  <url>
+    <loc>https://pixelbase.pages.dev/es/texto-a-base64.html</loc>
   </url>
 </urlset>
